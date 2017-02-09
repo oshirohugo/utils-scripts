@@ -23,7 +23,6 @@ for f in mp3_files:
     tokens = f.split('.')
     if tokens[-1].lower() != 'mp3':
         continue
-    print work_path + '/' + f
     audiofile = eyed3.load(work_path + '/' + f)
     audiofile.tag.artist = unicode(artist, 'utf-8')
     audiofile.tag.album = unicode(album, 'utf-8')
