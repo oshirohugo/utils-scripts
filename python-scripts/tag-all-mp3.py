@@ -6,7 +6,7 @@ from os import listdir
 from os.path import isfile, join
 
 if len(sys.argv) < 4:
-    print sys.argv[0] + ' <music-dir> <artist> <album>'
+    print(sys.argv[0] + ' <music-dir> <artist> <album>')
     exit(1)
 
 
@@ -14,8 +14,8 @@ work_path = sys.argv[1]
 artist = sys.argv[2]
 album = sys.argv[3]
 
-print artist
-print album
+print(artist)
+print(album)
 
 mp3_files = [f for f in listdir(work_path) if isfile(join(work_path, f))]
 
