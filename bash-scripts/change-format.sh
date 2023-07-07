@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#\ Usage: change-format.sh <img-dir> <from-extension> <to-extension>
+#\
+#\ Change image formats from a whole directory, using convert.
+#\
+# Autor: oshirohugo
 
 if [ "$#" -ne 3 ]; then
     echo "Usage:"
