@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-# Usage: change-config.sh key value conf-file
-#
+#\ Usage: change-config.sh <key> <value> <conf-file>
+#\
+#\ Change value of a key in config file with the following format
+#\ KEY=VALUE
+#\
 # Autor: oshirohugo
 
 if [ "$#" -ne 3 ];then
